@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>Tecnical Documentation of C++</title>
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <header><strong>C++ Documentation</strong></header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Compilers">Compilers</a>
+        <a class="nav-link" href="#Structure_of_a_program">Structure of a program</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Operators">Operators</a>
+        <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header><strong>Introduction</strong></header>
+            <p>C++ is a language that has evolved much over the years, and this documentation explains many
+                features added recently to the language.</p>
+            <p>This language expects the programmer to know what he or she is doing, but allows for
+                incredible amounts of control as a result.</p>
+            <p>It also offers remarkable support for procedural, generic, and object-oriented programming paradigms,
+                with many other paradigms being possible as well.</p>
+        </section>
+
+        <section id="Compilers" class="main-section">
+            <header><strong>Compilers</strong></header>
+            <p>Computers understand only one language and that language consists of sets of instructions made of
+                ones and zeros. This computer language is appropriately called machine language.</p>
+            <p>C++ is designed to be a compiled language, meaning that it is generally translated into machine
+                language that can be understood directly by the system, making the generated program highly
+                efficient. For that, set of tools are needed, known as the development toolchain, whose core are
+                a compiler and its linker.</p>
+        </section>
+
+        <section id="Structure_of_a_program" class="main-section">
+            <header><strong>Structure of a program</strong></header>
+            <p>The best way to learn a programming language is by writing programs. Typically, the first
+                program beginners write is a program called "Hello World", which simply prints "Hello World"
+                to your computer screen. Although it is very simple, it contains all the fundamental components
+                C++ programs have:</p>
+            <div id="code">
+                <code>// my first program in C++<br>
+                    #include <iostream><br><br>
+                    int main()<br>
+                    {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout << "Hello World!";<br>
+                    }</code>
+            </div>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header><strong>Variables</strong></header>
+            <p>C++ is a strongly-typed language, and requires every variable to be declared with its
+                type before its first use. This informs the compiler the size to reserve in memory for
+                the variable and how to interpret its value. The syntax to declare a new variable in C++
+                is straightforward: we simply write the type followed by the variable name (i.e., its
+                identifier). For example:</p>
+            <div id="code">
+                <code>int a;<br>
+                float mynumber;
+            </code>
+            </div>
+            <p>To see what variable declarations look like in action within a program, let's have a look
+                at this example:</p>
+            <div id="code">
+                <code>// operating with variables<br>
+                #include <iostream><br>
+                using namespace std;<br>
+                <br>
+                int main ()<br>
+                {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// declaring variables:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;int a, b;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;int result;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// process:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;a = 5;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;b = 2;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;a = a + 1;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;result = a - b;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// print out the result:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << result;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// terminate the program:<br>
+                    &nbsp;&nbsp;&nbsp;return 0;
+                }</code>
+            </div>
+            <p>Ouputs: 4</p>
+            <p>To declare a variable of type int called x and initialize it to a value of zero from
+                the same moment it is declared, we can write:</p>
+            <div id="code">
+                <code>int x = 0;
+                </code>
+            </div>
+        </section>
+
+        <section id="Operators" class="main-section">
+            <header><strong>Operators</strong></header>
+            <p>The assignment operator ( = ) assigns a value to a variable.</p>
+            <div id="code">
+                <code>x = 5;</code>
+            </div>
+            <p>The five arithmetical operations supported by C++ are:</p>
+            <ul>
+                <li>+ &nbsp;addition</li>
+                <li>- &nbsp;subtraction</li>
+                <li>* &nbsp;multiplication</li>
+                <li>/ &nbsp;division</li>
+                <li>% &nbsp;modulo</li>
+            </ul>
+            <p>The relational operators in C++ are:</p>
+            <ul>
+                <li>== &nbsp;Equal to</li>
+                <li>!= &nbsp;Not equal to</li>
+                <li>
+                    < &nbsp;Less than</li>
+                <li>> &nbsp;Greater than</li>
+                <li>
+                    <= &nbsp;Less than or equal to</li>
+                <li>>= &nbsp;Greater than or equal to</li>
+            </ul>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header><strong>Reference</strong></header>
+            <p>All the information is taken from <a id="link" href="http://www.cplusplus.com/"
+                    target="_blank">http://www.cplusplus.com/</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
